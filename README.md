@@ -2,6 +2,13 @@
 
 Welcome to Threads, a full-stack social media platform designed to provide users with a seamless experience in connecting and sharing content. Inspired by popular social networks, Threads offers essential features such as user authentication, posting, commenting, following, and liking functionality. This README will guide you through the features, technologies used, and how to get started with the project.
 
+![Pic1](https://github.com/dodomyg/Threads/assets/99533117/8e451eb4-fa4b-48c7-871c-329470461c7f)
+![Pic2](https://github.com/dodomyg/Threads/assets/99533117/485d1924-3f9e-4556-ae24-df3649917d07)
+![Pic3](https://github.com/dodomyg/Threads/assets/99533117/7b0c74e0-7ffd-4555-9174-3cb7723cb77a)
+![Pic4](https://github.com/dodomyg/Threads/assets/99533117/5dff205f-e307-48e8-85c6-7697f36b81fc)
+![Pic5](https://github.com/dodomyg/Threads/assets/99533117/2cd3c8eb-04c9-474d-b500-972fd727c640)
+![Pic6](https://github.com/dodomyg/Threads/assets/99533117/b4fb6e2e-98ed-4dee-b3aa-650fcda8805f)
+
 ## Features
 
 ### User Authentication
@@ -52,6 +59,8 @@ To run Threads locally, follow these steps:
 
 ### Clone the repository:
 ```bash
+
+
 git clone https://github.com/your-username/threads.git
 cd threads
 
@@ -102,10 +111,3 @@ Fork the repository and create your branch from main.
 Make your changes, ensuring your code follows the project's coding style.
 Commit your changes with clear and descriptive messages.
 Issue a pull request detailing the changes made.
-
-![Pic1](https://github.com/dodomyg/Threads/assets/99533117/8e451eb4-fa4b-48c7-871c-329470461c7f)
-![Pic2](https://github.com/dodomyg/Threads/assets/99533117/485d1924-3f9e-4556-ae24-df3649917d07)
-![Pic3](https://github.com/dodomyg/Threads/assets/99533117/7b0c74e0-7ffd-4555-9174-3cb7723cb77a)
-![Pic4](https://github.com/dodomyg/Threads/assets/99533117/5dff205f-e307-48e8-85c6-7697f36b81fc)
-![Pic5](https://github.com/dodomyg/Threads/assets/99533117/2cd3c8eb-04c9-474d-b500-972fd727c640)
-![Pic6](https://github.com/dodomyg/Threads/assets/99533117/b4fb6e2e-98ed-4dee-b3aa-650fcda8805f)
