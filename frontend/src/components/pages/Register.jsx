@@ -29,7 +29,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-        const resp = await axios.post("http://localhost:8000/threads/users/register", {
+        const resp = await axios.post("https://threads-mj63.onrender.com//threads/users/register", {
             username, email, password, name
         });
         toast({

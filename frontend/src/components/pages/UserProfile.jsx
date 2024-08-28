@@ -17,7 +17,7 @@ const UserProfile = () => {
   useEffect(()=>{
       const getUserbyId=async()=>{
         try {
-          const resp = await axios.get(`http://localhost:8000/threads/users/singleUser/${id}`,{withCredentials:true})
+          const resp = await axios.get(`https://threads-mj63.onrender.com//threads/users/singleUser/${id}`,{withCredentials:true})
           setUserProfile(resp.data)
         } catch (error) {
           console.log(error);
@@ -26,7 +26,7 @@ const UserProfile = () => {
 
       const fetchUserThreads=async()=>{
         try {
-            const resp = await axios.get(`http://localhost:8000/threads/posts/allPosts/${id}`,{withCredentials:true})
+            const resp = await axios.get(`https://threads-mj63.onrender.com//threads/posts/allPosts/${id}`,{withCredentials:true})
             console.log(resp.data);
             setThreads(resp.data)
         } catch (error) {
@@ -44,7 +44,7 @@ const UserProfile = () => {
 
   const followUser=async()=>{
     try {
-      const resp = await axios.post(`http://localhost:8000/threads/users/follow/${id}`,{withCredentials:true})
+      const resp = await axios.post(`https://threads-mj63.onrender.com//threads/users/follow/${id}`,{withCredentials:true})
       alert(resp.data.message)
       window.location.reload()
     } catch (error) {

@@ -19,7 +19,7 @@ const Home = () => {
     const fetchFeed=async()=>{
       try {
         setLoading(true)
-        const resp = await axios.get(`http://localhost:8000/threads/users/following`,{withCredentials:true})
+        const resp = await axios.get(`https://threads-mj63.onrender.com//threads/users/following`,{withCredentials:true})
         setFeed(resp.data)
         setLoading(false)
         console.log(resp.data);
