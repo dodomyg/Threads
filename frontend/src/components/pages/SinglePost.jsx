@@ -23,7 +23,7 @@ const SinglePost = () => {
     useEffect(()=>{
         const getSinglePost=async()=>{
             try {
-                const resp = await axios.get(`https://threads-mj63.onrender.com//threads/posts/${id}`,{withCredentials:true})
+                const resp = await axios.get(`https://threads-mj63.onrender.com/threads/posts/${id}`,{withCredentials:true})
                 
                 setPost(resp.data)
             } catch (error) {
@@ -37,7 +37,7 @@ const SinglePost = () => {
     const toast=useToast()  
     const addComment=async()=>{
         try {
-            const resp = await axios.post(`https://threads-mj63.onrender.com//threads/posts/comment/${id}`,{text:comment},{withCredentials:true})
+            const resp = await axios.post(`https://threads-mj63.onrender.com/threads/posts/comment/${id}`,{text:comment},{withCredentials:true})
             alert(resp.data.message)
             window.location.reload()
             setComment("")
@@ -73,7 +73,7 @@ const SinglePost = () => {
 
     const likePost=async()=>{
         try {
-            const resp = await axios.post(`https://threads-mj63.onrender.com//threads/posts/like/${id}`,{withCredentials:true})
+            const resp = await axios.post(`https://threads-mj63.onrender.com/threads/posts/like/${id}`,{withCredentials:true})
             alert(resp.data.message)
             window.location.reload()
         } catch (error) {
@@ -107,7 +107,7 @@ const SinglePost = () => {
 
     const deletePost = async () => {
         try {
-            const resp = await axios.delete(`https://threads-mj63.onrender.com//threads/posts/${post._id}`, { withCredentials: true });
+            const resp = await axios.delete(`https://threads-mj63.onrender.com/threads/posts/${post._id}`, { withCredentials: true });
             toast({
                 title: resp.data.message,
                 status: 'success',
@@ -180,7 +180,7 @@ if(!post)return
 					<Text fontSize={"sm"}>{post.title}</Text>
 					{(
 						<Box borderRadius={6} overflow={"hidden"} border={"1px solid"} borderColor={"gray.light"}>
-							<Image  objectFit={"cover"}  src={`https://threads-mj63.onrender.com//images/${post.img}`} w={"full"} />
+							<Image  objectFit={"cover"}  src={`https://threads-mj63.onrender.com/images/${post.img}`} w={"full"} />
 						</Box>
 					)}
 

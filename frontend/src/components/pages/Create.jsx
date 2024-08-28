@@ -17,7 +17,7 @@ const Create = () => {
       formData.append("img", file); // Change "file" to "img" to match the backend expectation
       formData.append("title", title);
       
-      const resp = await axios.post("https://threads-mj63.onrender.com//threads/posts/create", formData, { 
+      const resp = await axios.post("https://threads-mj63.onrender.com/threads/posts/create", formData, { 
         withCredentials: true,
         headers: {
           "Content-Type": "multipart/form-data",

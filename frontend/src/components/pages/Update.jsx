@@ -32,7 +32,7 @@ const Update = () => {
   useEffect(()=>{
     const getUserValue=async()=>{
       try {
-        const resp = await axios.get(`https://threads-mj63.onrender.com//threads/users/jwt`,{withCredentials:true})
+        const resp = await axios.get(`https://threads-mj63.onrender.com/threads/users/jwt`,{withCredentials:true})
         setUsername(resp.data.username)
         setEmail(resp.data.email)
         setDp(resp.data.dp)
@@ -58,7 +58,7 @@ const Update = () => {
       formData.append('password', password);
       formData.append('dp', fileRef.current.files[0]); // Append the selected file to FormData
   
-      const response = await fetch(`https://threads-mj63.onrender.com//threads/users/update/${id}`, {
+      const response = await fetch(`https://threads-mj63.onrender.com/threads/users/update/${id}`, {
         method: 'PUT',
         body: formData,
         credentials: 'include',

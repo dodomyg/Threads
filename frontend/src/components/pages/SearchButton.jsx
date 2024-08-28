@@ -25,7 +25,7 @@ const UpdateButton = () => {
         const fetchUsers = async()=>{
             try {
                 setLoading(true)
-            const resp =  await axios.get(`https://threads-mj63.onrender.com//threads/users/searchUser?search=${inputValue}`,{withCredentials:true})
+            const resp =  await axios.get(`https://threads-mj63.onrender.com/threads/users/searchUser?search=${inputValue}`,{withCredentials:true})
             setSeachResults(resp.data.findUser)
             setLoading(false)
             } catch (error) {

@@ -16,7 +16,7 @@ const LogOut = () => {
     const handleLogOut=async()=>{
         
         try {
-            const resp =await axios.post("https://threads-mj63.onrender.com//threads/users/logout",{withCredentials:true})
+            const resp =await axios.post("https://threads-mj63.onrender.com/threads/users/logout",{withCredentials:true})
             setUser(null)
             toast({
                 title: resp.data.message,
