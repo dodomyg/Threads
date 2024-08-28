@@ -1,9 +1,9 @@
 {
-  "homepage": "https://dodomyg.github.io/Threads",
+  "homepage": "https://dodomyg.github.io",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://threads-mj63.onrender.com",
+  "proxy": "http://localhost:8000",
   "dependencies": {
     "@chakra-ui/react": "^2.8.2",
     "@emotion/react": "^11.11.3",

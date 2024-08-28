@@ -51,7 +51,7 @@ const UserThreads = ({username,dp,title,img,likes,comments,id,likeArray,createdA
 					<Text fontSize={"sm"}>{title}</Text>
 					{(
 						<Box borderRadius={6} overflow={"hidden"} border={"1px solid"} borderColor={"gray.light"}>
-							<Image cursor={'pointer'} onClick={()=>navigate(`/threads/${id}`)}  src={`https://threads-mj63.onrender.com/images/${img}`} w={"full"} />
+							<Image cursor={'pointer'} onClick={()=>navigate(`/threads/${id}`)}  src={`http://localhost:8000/images/${img}`} w={"full"} />
 						</Box>
 					)}
 

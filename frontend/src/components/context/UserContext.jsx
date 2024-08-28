@@ -11,7 +11,7 @@ export const UserProvider=({children})=>{
     useEffect(()=>{
         const getUser=async()=>{
             try {
-                const resp =await axios.get('https://threads-mj63.onrender.com/threads/users/jwt',{withCredentials:true})
+                const resp =await axios.get('http://localhost:8000/threads/users/jwt',{withCredentials:true})
                 console.log(resp.data);
                 
                 setUser(resp.data)

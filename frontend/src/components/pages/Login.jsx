@@ -29,7 +29,7 @@ const navigate=useNavigate()
   const handleLogin = async (e) => {
     e.preventDefault()
     try {
-      const resp = await axios.post("https://threads-mj63.onrender.com/threads/users/login", {
+      const resp = await axios.post("http://localhost:8000/threads/users/login", {
         username,password
       },{withCredentials:true})
 
